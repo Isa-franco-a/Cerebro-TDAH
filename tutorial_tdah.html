@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Interactivo: Entendiendo el Cerebro TDAH 🧠</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #6c5ce7; /* Un morado amigable */
+            padding-bottom: 15px;
+        }
+
+        header h1 {
+            color: #6c5ce7;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .step {
+            display: none; /* Ocultar todos los pasos inicialmente */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fdfdff;
+        }
+
+        .step.active {
+            display: block; /* Mostrar solo el paso activo */
+        }
+
+        .step h2 {
+            color: #2d3436; /* Un gris oscuro */
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 1px dashed #b2bec3;
+            padding-bottom: 8px;
+        }
+        
+        .step h3 {
+            color: #007bff; /* Un azul para subtemas */
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        .step p, .step ul {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        
+        .step ul {
+            list-style-type: "✔️ "; /* Usando un emoji como viñeta */
+            padding-left: 25px;
+        }
+        
+        .step li {
+            margin-bottom: 8px;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .navigation-buttons button {
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #584bad;
+        }
+
+        .navigation-buttons button:disabled {
+            background-color: #c7c1e0;
+            cursor: not-allowed;
+        }
+        
+        #stepIndicator {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .expert-insights {
+            background-color: #eef2f7;
+            border-left: 4px solid #007bff;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-style: italic;
+            border-radius: 4px;
+        }
+        
+        .expert-insights p {
+            margin: 5px 0;
+        }
+
+        .highlight {
+            background-color: #fff3cd; /* Amarillo claro para destacar */
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><span class="icon">🧠</span> Explorando el Cerebro TDAH: Un Viaje Interactivo <span class="icon">💡</span></h1>
+        </header>
+
+        <main>
+            <div id="step-0" class="step active">
+                <h2><span class="icon">👋</span> ¡Bienvenido/a al Tutorial!</h2>
+                <p>Este tutorial está diseñado para ayudarte a comprender cómo funciona el cerebro de una persona con Trastorno por Déficit de Atención e Hiperactividad (TDAH), de una forma sencilla y paso a paso.</p>
+                <p>Nos basaremos en las ideas de expertos reconocidos como el Dr. Russell Barkley, la Dra. Ana Ibáñez y el Dr. Edward Hallowell, para ofrecerte una visión clara y útil.</p>
+                <p><strong>Importante:</strong> Esto es una guía informativa y no reemplaza el diagnóstico o consejo de un profesional de la salud.</p>
+                <p>¡Comencemos este viaje de descubrimiento! <span class="icon">🚀</span></p>
+            </div>
+
+            <div id="step-1" class="step">
+                <h2><span class="icon">🎶</span> El Cerebro y sus Funciones Ejecutivas</h2>
+                <p>Imagina que el cerebro tiene un <span class="highlight">director de orquesta</span>. Este director se encarga de coordinar a todos los músicos para que la melodía suene armoniosa. Estas habilidades de coordinación y gestión se llaman <strong>Funciones Ejecutivas</strong>.</p>
+                <p>En un cerebro neurotípico (sin TDAH), este director suele estar muy atento y organizado. En el cerebro TDAH, el director es increíblemente creativo y enérgico, pero a veces se distrae fácilmente o le cuesta organizar a todos los músicos a la vez.</p>
+                <div class="expert-insights">
+                    <p><span class="icon">🗣️</span> <strong>Dr. Russell Barkley</strong> enfatiza que el TDAH no es un problema de "no saber qué hacer", sino de "no hacer lo que sabes" debido a dificultades en estas funciones ejecutivas.</p>
+                </div>
+                <p>Las funciones ejecutivas clave incluyen:</p>
+                <ul>
+                    <li><strong>Inhibición:</strong> La capacidad de frenar impulsos.</li>
+                    <li><strong>Memoria de Trabajo:</strong> Mantener y manipular información en la mente.</li>
+                    <li><strong>Autorregulación Emocional:</strong> Manejar las emociones de forma adecuada.</li>
+                    <li><strong>Automotivación:</strong> Iniciar y mantener el esfuerzo en tareas.</li>
+                    <li><strong>Planificación y Resolución de Problemas:</strong> Organizar y encontrar soluciones.</li>
+                </ul>
+                <p>En los siguientes pasos, veremos cómo estas funciones pueden verse afectadas en el TDAH.</p>
+            </div>
+
+            <div id="step-2" class="step">
+                <h2><span class="icon">🛑</span> La Inhibición: ¿Dónde está el Freno?</h2>
+                <p>La <strong>inhibición</strong> es como el <span class="highlight">pedal de freno</span> del cerebro. Nos ayuda a detenernos antes de actuar o hablar impulsivamente, y a resistir distracciones.</p>
+                <p>En el TDAH, este "freno" puede ser menos eficaz. Esto puede llevar a:</p>
+                <ul>
+                    <li>Interrumpir a otros al hablar.</li>
+                    <li>Actuar sin pensar en las consecuencias.</li>
+                    <li>Dificultad para esperar el turno.</li>
+                    <li>Distraerse fácilmente por estímulos externos (un ruido, un pensamiento).</li>
+                </ul>
+                <div class="expert-insights">
+                    <p><span class="icon">💭</span> La impulsividad no es una "mala conducta" intencionada, sino una dificultad neurológica para aplicar ese freno a tiempo.</p>
+                </div>
+                <p>Imagina querer decir algo muy emocionante y decirlo sin esperar a que la otra persona termine de hablar. ¡Ese es el freno de la inhibición actuando un poco más lento!</p>
+            </div>
+            
+            <div id="step-3" class="step">
+                <h2><span class="icon">📝</span> Memoria de Trabajo: El "Post-it" Mental</h2>
+                <p>La <strong>Memoria de Trabajo</strong> es como un <span class="highlight">"post-it" mental</span> donde anotamos información temporalmente para usarla de inmediato. Por ejemplo, recordar un número de teléfono mientras lo marcas o seguir instrucciones de varios pasos.</p>
+                <p>En el TDAH, este "post-it" puede ser más pequeño o la tinta puede borrarse más rápido. Esto significa:</p>
+                <ul>
+                    <li>Olvidar para qué fuiste a una habitación.</li>
+                    <li>Dificultad para seguir instrucciones largas.</li>
+                    <li>Perder el hilo de una conversación o lectura.
+                    <li>Olvidar dónde se dejaron las cosas (¡llaves, móvil!).</li>
+                </ul>
+                <div class="expert-insights">
+                    <p><span class="icon">💡</span> <strong>Dra. Ana Ibáñez</strong> suele explicar que esto no es "no querer recordar", sino una dificultad real para retener y manipular información activamente.</p>
+                </div>
+                <p>No es falta de inteligencia, ¡es como si el espacio para tomar notas mentales fuera más limitado o se llenara más rápido!</p>
+            </div>
+
+            <div id="step-4" class="step">
+                <h2><span class="icon">🎢</span> Autorregulación Emocional: Gestionando Sentimientos</h2>
+                <p>La <strong>Autorregulación Emocional</strong> es la habilidad de <span class="highlight">manejar nuestras emociones</span>: identificar lo que sentimos, moderar la intensidad y expresarlo de forma apropiada.</p>
+                <p>En el TDAH, las emociones pueden vivirse de forma muy intensa, como una <span class="highlight">montaña rusa</span>. La frustración, la alegría, el enfado... todo puede sentirse magnificado y ser más difícil de gestionar. Esto puede llevar a:</p>
+                <ul>
+                    <li>Reacciones emocionales fuertes ante pequeñas cosas.</li>
+                    <li>Baja tolerancia a la frustración.</li>
+                    <li>Cambios de humor más frecuentes o rápidos.</li>
+                    <li>Dificultad para calmarse después de un disgusto.</li>
+                </ul>
+                <div class="expert-insights">
+                    <p><span class="icon">❤️</span> Muchos expertos, incluido el <strong>Dr. Hallowell</strong>, señalan la importancia de entender esta sensibilidad emocional como parte del TDAH, y no como un defecto de carácter.</p>
+                </div>
+                <p>Es como tener el "volumen" de las emociones un poco más alto de lo habitual y que el "control de volumen" sea más difícil de alcanzar.</p>
+            </div>
+
+            <div id="step-5" class="step">
+                <h2><span class="icon">🚀</span> Automotivación: El Poder del Interés</h2>
+                <p>La <strong>Automotivación</strong> es la capacidad de <span class="highlight">iniciar y mantener el esfuerzo</span> en tareas, especialmente si no son inmediatamente gratificantes.</p>
+                <p>El cerebro TDAH a menudo se describe como un <span class="highlight">"cerebro que se mueve por el interés y la novedad"</span>. Funciona increíblemente bien (¡hola, hiperfoco!) cuando algo le apasiona, le resulta novedoso o tiene una recompensa inmediata.</p>
+                <p>Sin embargo, para tareas que percibe como aburridas, repetitivas o con recompensas a largo plazo, puede ser muy difícil "arrancar el motor". Esto puede manifestarse como:</p>
+                <ul>
+                    <li>Procrastinación (dejar las cosas para después).</li>
+                    <li>Dificultad para empezar tareas poco interesantes.</li>
+                    <li>Necesidad de recompensas o plazos urgentes para activarse.</li>
+                    <li>Aburrimiento rápido si la tarea no es estimulante.</li>
+                </ul>
+                 <div class="expert-insights">
+                    <p><span class="icon">🌟</span> El <strong>Dr. Edward Hallowell</strong> habla de un "motor de Ferrari con frenos de bicicleta". Cuando el interés está ahí, la capacidad es enorme, pero regular ese motor y dirigirlo hacia lo menos estimulante es el desafío.</p>
+                </div>
+                <p>No es pereza, es cómo funciona su "sistema de recompensa y motivación", que busca estímulos más intensos o inmediatos.</p>
+            </div>
+            
+            <div id="step-6" class="step">
+                <h2><span class="icon">📅</span> Planificación y Gestión del Tiempo</h2>
+                <p>La <strong>Planificación</strong> implica organizar tareas, establecer prioridades y pensar en los pasos necesarios para alcanzar un objetivo. La <strong>Gestión del Tiempo</strong> es la habilidad de percibir el paso del tiempo y usarlo eficazmente.</p>
+                <p>Para el cerebro TDAH, estas áreas pueden ser un gran desafío:</p>
+                <ul>
+                    <li>Dificultad para estimar cuánto tardará una tarea (<span class="highlight">"ceguera al tiempo"</span>).</li>
+                    <li>Problemas para organizar materiales o espacios de trabajo.</li>
+                    <li>Tendencia a empezar muchas cosas y no terminarlas.</li>
+                    <li>Dificultad para seguir secuencias o priorizar qué hacer primero.</li>
+                </ul>
+                 <div class="expert-insights">
+                    <p><span class="icon">🗺️</span> Expertos como Barkley y otros coinciden en que las dificultades organizativas son una consecuencia directa de las debilidades en las funciones ejecutivas, no de falta de inteligencia o deseo de ser organizado.</p>
+                </div>
+                <p>Es como intentar planificar un viaje sin un mapa claro o con un reloj que a veces va muy rápido y otras muy lento.</p>
+            </div>
+
+            <div id="step-7" class="step">
+                <h2><span class="icon">🎯</span> Resumen y Puntos Clave</h2>
+                <p>Hemos recorrido varios aspectos del funcionamiento del cerebro TDAH. Recordemos lo más importante:</p>
+                <ul>
+                    <li>El TDAH se relaciona principalmente con diferencias en las <strong>Funciones Ejecutivas</strong> (el "director de orquesta" del cerebro).</li>
+                    <li><strong>Inhibición:</strong> Dificultad para "frenar" impulsos y distracciones. <span class="icon">🛑</span></li>
+                    <li><strong>Memoria de Trabajo:</strong> El "post-it" mental puede ser más limitado o volátil. <span class="icon">📝</span></li>
+                    <li><strong>Autorregulación Emocional:</strong> Las emociones se viven intensamente y pueden ser difíciles de gestionar. <span class="icon">🎢</span></li>
+                    <li><strong>Automotivación:</strong> El cerebro se activa potentemente con el interés, la novedad y la urgencia. <span class="icon">🚀</span></li>
+                    <li><strong>Planificación y Tiempo:</strong> Organizarse y percibir el tiempo puede ser un reto. <span class="icon">📅</span></li>
+                </ul>
+                <p><strong>Es crucial entender que el TDAH:</strong></p>
+                <ul>
+                    <li><span class="highlight">NO</span> es pereza, falta de inteligencia o mala educación.</li>
+                    <li>Es una condición neurobiológica con base genética.</li>
+                    <li>Presenta desafíos, pero también <span class="highlight">fortalezas únicas</span> como la creatividad, la energía, la pasión por los intereses y la capacidad de pensar "fuera de la caja".</li>
+                </ul>
+                 <div class="expert-insights">
+                    <p><span class="icon">💡</span> Todos los expertos mencionados coinciden en la importancia de un enfoque comprensivo y de buscar estrategias adaptadas, en lugar de culpar o castigar.</p>
+                </div>
+                <p>¡Gracias por completar este tutorial! Esperamos que te haya sido útil. <span class="icon">🎉</span></p>
+            </div>
+
+        </main>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn" onclick="navigate(-1)" disabled>⬅️ Anterior</button>
+            <span id="stepIndicator">Paso 1 de X</span>
+            <button id="nextBtn" onclick="navigate(1)">Siguiente ➡️</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-2025 Tutorial Interactivo TDAH. Creado con fines educativos.</p>
+    </footer>
+
+    <script>
+        let currentStep = 0;
+        const steps = document.querySelectorAll('.step');
+        const totalSteps = steps.length;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const stepIndicator = document.getElementById('stepIndicator');
+
+        function showStep(stepIndex) {
+            steps.forEach((step, index) => {
+                step.classList.toggle('active', index === stepIndex);
+            });
+            updateNavigationButtons();
+            updateStepIndicator();
+        }
+
+        function updateNavigationButtons() {
+            prevBtn.disabled = currentStep === 0;
+            nextBtn.disabled = currentStep === totalSteps - 1;
+        }
+        
+        function updateStepIndicator() {
+            // Sumamos 1 a currentStep porque los índices son base 0, pero queremos mostrar "Paso 1", "Paso 2", etc.
+            stepIndicator.textContent = `Paso ${currentStep + 1} de ${totalSteps}`;
+        }
+
+        function navigate(direction) {
+            currentStep += direction;
+            if (currentStep < 0) {
+                currentStep = 0;
+            } else if (currentStep >= totalSteps) {
+                currentStep = totalSteps - 1;
+            }
+            showStep(currentStep);
+        }
+
+        // Inicializar la vista
+        showStep(currentStep);
+    </script>
+
+</body>
+</html>
